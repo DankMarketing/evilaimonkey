@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You might need to adjust width/height based on content */
+/* Or remove fixed size for auto-sizing */
+body {
+  width: 600px;
+  /* Consider using min-height instead of fixed height */
+  /* height: 700px; */
+  min-height: 580px;
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* Add any custom component styles here */
+/* Example: */
+/* .btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+} */

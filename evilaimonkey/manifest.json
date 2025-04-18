@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "aimonkey v1 (AutoRun Fixed)",
+  "version": "1.1.0",
+  "description": "AI-powered userscript manager (v1 + AutoRun Fix)",
+  "permissions": [
+    "activeTab",
+    "scripting",  
+    "storage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "aimonkey v1 (AutoRun Fixed)"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [{
+    "resources": ["userscript.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
